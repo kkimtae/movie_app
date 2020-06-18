@@ -1,15 +1,19 @@
 import React from "react";
 
 function Movie(props) {
-  console.log(props);
-  return <h1>{props}</h1>;
+  console.log(props.isMovie);
+  return (
+    <div>
+      <h1>i like {props.name}</h1>
+    </div>
+  );
 }
 
 function App() {
   return (
     <div>
       <h1>Hello!!</h1>
-      <Movie name="KIM" isMovie={true} />
+      <Movie name="kimchi" isMovie={true} />
     </div>
   );
 }
